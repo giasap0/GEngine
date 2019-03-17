@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="File di origine">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="File di intestazione">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="File di risorse">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="File di intestazione\Shaders">
+      <UniqueIdentifier>{75dbc18d-ced3-4206-8085-97824cbaa1ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di origine\Shaders">
+      <UniqueIdentifier>{1908f73a-bd1a-47fa-8af6-cec18023e8c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di intestazione\Models">
+      <UniqueIdentifier>{98c06919-5353-4bac-a30d-276fa9c43389}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File di origine\Models">
+      <UniqueIdentifier>{0909e6a5-f0c6-450f-8a5f-2f375e47f81d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vertex Shaders">
+      <UniqueIdentifier>{b749a6f9-d4b9-42ca-87e0-6adc25da384b}</UniqueIdentifier>
+      <Extensions>vs;</Extensions>
+    </Filter>
+    <Filter Include="Pixel Shaders">
+      <UniqueIdentifier>{09340ead-bf9b-44b3-baae-9ab2d67bd980}</UniqueIdentifier>
+      <Extensions>ps;</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GRenderIncludes.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GCamera.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GGraphics.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GLight.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GRenderer.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GSprite.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GTexture.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\GAbstractShader.h">
+      <Filter>File di intestazione\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\GColorShader.h">
+      <Filter>File di intestazione\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\GLightShader.h">
+      <Filter>File di intestazione\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\GTextureShader.h">
+      <Filter>File di intestazione\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="GFont.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GFrustum.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GScene.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\GColors.h">
+      <Filter>File di intestazione\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\GMultiTextureShader.h">
+      <Filter>File di intestazione\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="GTextureArray.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\GLightMapShader.h">
+      <Filter>File di intestazione\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\GAbstract2TexturesShader.h">
+      <Filter>File di intestazione\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\GNormalMapShader.h">
+      <Filter>File di intestazione\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="GRenderToTexture.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="GRenderWindow.h">
+      <Filter>File di intestazione</Filter>
+    </ClInclude>
+    <ClInclude Include="Shaders\GModelShader.h">
+      <Filter>File di intestazione\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="TokenStream.h">
+      <Filter>File di intestazione\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="GModel.h">
+      <Filter>File di intestazione\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="GModelLoader.h">
+      <Filter>File di intestazione\Models</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GCamera.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GGraphics.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GRenderer.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GSprite.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GTexture.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders\GAbstractShader.cpp">
+      <Filter>File di origine\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders\GColorShader.cpp">
+      <Filter>File di origine\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders\GLightShader.cpp">
+      <Filter>File di origine\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders\GTextureShader.cpp">
+      <Filter>File di origine\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="GFont.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GFrustum.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GScene.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders\GMultiTextureShader.cpp">
+      <Filter>File di origine\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="GTextureArray.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders\GLightMapShader.cpp">
+      <Filter>File di origine\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders\GAbstract2TexturesShader.cpp">
+      <Filter>File di origine\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders\GNormalMapShader.cpp">
+      <Filter>File di origine\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="GRenderToTexture.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="GRenderWindow.cpp">
+      <Filter>File di origine</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders\GModelShader.cpp">
+      <Filter>File di origine\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="TokenStream.cpp">
+      <Filter>File di origine\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="GModel.cpp">
+      <Filter>File di origine\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="GModelLoader.cpp">
+      <Filter>File di origine\Models</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\GEngine_Release\shaders\light.ps">
+      <Filter>Pixel Shaders</Filter>
+    </None>
+    <None Include="..\GEngine_Release\shaders\light.vs">
+      <Filter>Vertex Shaders</Filter>
+    </None>
+    <None Include="..\GEngine_Release\shaders\color.ps">
+      <Filter>Pixel Shaders</Filter>
+    </None>
+    <None Include="..\GEngine_Release\shaders\color.vs">
+      <Filter>Vertex Shaders</Filter>
+    </None>
+    <None Include="..\GEngine_Release\shaders\font.ps">
+      <Filter>Pixel Shaders</Filter>
+    </None>
+    <None Include="..\GEngine_Release\shaders\font.vs">
+      <Filter>Vertex Shaders</Filter>
+    </None>
+    <None Include="..\GEngine_Release\shaders\lightmap.ps">
+      <Filter>Pixel Shaders</Filter>
+    </None>
+    <None Include="..\GEngine_Release\shaders\lightmap.vs">
+      <Filter>Vertex Shaders</Filter>
+    </None>
+    <None Include="..\GEngine_Release\shaders\multitexture.ps">
+      <Filter>Pixel Shaders</Filter>
+    </None>
+    <None Include="..\GEngine_Release\shaders\multitexture.vs">
+      <Filter>Vertex Shaders</Filter>
+    </None>
+    <None Include="..\GEngine_Release\shaders\normalmap.ps">
+      <Filter>Pixel Shaders</Filter>
+    </None>
+    <None Include="..\GEngine_Release\shaders\normalmap.vs">
+      <Filter>Vertex Shaders</Filter>
+    </None>
+    <None Include="..\GEngine_Release\shaders\texture.ps">
+      <Filter>Pixel Shaders</Filter>
+    </None>
+    <None Include="..\GEngine_Release\shaders\texture.vs">
+      <Filter>Vertex Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
