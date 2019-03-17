@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0EBE3B09-B516-4CCB-94E0-C2E2013CFDFA}</ProjectGuid>
+    <RootNamespace>GEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(ProjectName)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build_$(ProjectName)\$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)DirectXTK\Src;$(SolutionDir)DirectXTK\Inc;$(SolutionDir)GRenderLib;$(SolutionDir)GCommands;$(SolutionDir)GPhysicLib;$(SolutionDir)MathLib;$(SolutionDir)DataStruct;$(SolutionDir)GInputLib;$(SolutionDir)GSoundLib;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)DirectXTK\Bin\$(Configuration);$(SolutionDir)GCommands_$(Configuration);$(SolutionDir)DataStruct_$(Configuration);$(SolutionDir)MathLib_$(Configuration);$(SolutionDir)GRenderLib_$(Configuration);$(SolutionDir)GInputLib_$(Configuration);$(SolutionDir)GSoundLib_$(Configuration);$(SolutionDir)GPhysicLib_$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(ProjectName)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build_$(ProjectName)\$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)DirectXTK\Src;$(SolutionDir)DirectXTK\Inc;$(SolutionDir)GRenderLib;$(SolutionDir)GCommands;$(SolutionDir)GPhysicLib;$(SolutionDir)MathLib;$(SolutionDir)DataStruct;$(SolutionDir)GInputLib;$(SolutionDir)GSoundLib;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)DirectXTK\Bin\$(Configuration);$(SolutionDir)GCommands_$(Configuration);$(SolutionDir)DataStruct_$(Configuration);$(SolutionDir)MathLib_$(Configuration);$(SolutionDir)GRenderLib_$(Configuration);$(SolutionDir)GInputLib_$(Configuration);$(SolutionDir)GSoundLib_$(Configuration);$(SolutionDir)GPhysicLib_$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName)$(ConfigurationName).pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(IntDir)$(TargetName).map</MapFileName>
+      <AdditionalDependencies>DataStruct.lib;MathLib.lib;GRenderLib.lib;GInputLib.lib;GSoundLib.lib;GCommands.lib;GPhysicLib.lib;DirectXTK.lib;d3d11.lib;d3dcompiler.lib;dxguid.lib;DXGI.lib;dinput8.lib;Xinput.lib;winmm.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName)$(ConfigurationName).pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(IntDir)$(TargetName).map</MapFileName>
+      <AdditionalDependencies>DataStruct.lib;MathLib.lib;GRenderLib.lib;GInputLib.lib;GSoundLib.lib;GCommands.lib;GPhysicLib.lib;DirectXTK.lib;d3d11.lib;d3dcompiler.lib;dxguid.lib;DXGI.lib;dinput8.lib;Xinput.lib;winmm.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="GEngineIncludes.h" />
+    <ClInclude Include="GFps.h" />
+    <ClInclude Include="GLogger.h" />
+    <ClInclude Include="GMainWindow.h" />
+    <ClInclude Include="GSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GLogger.cpp" />
+    <ClCompile Include="GMainWindow.cpp" />
+    <ClCompile Include="GSystem.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

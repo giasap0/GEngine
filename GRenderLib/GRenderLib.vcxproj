@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3909B436-43FD-43ED-B3A9-C713BF1D0CC5}</ProjectGuid>
+    <RootNamespace>GRenderLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(ProjectName)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build_$(ProjectName)\$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)DirectXTK\Inc;$(SolutionDir)DirectXTK\Src;$(SolutionDir)MathLib;$(SolutionDir)DataStruct;$(SolutionDir)GCommands;$(SolutionDir)GPhysicLib;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)DirectXTK\Bin\$(Configuration);$(SolutionDir)MathLib_$(Configuration);$(SolutionDir)DataStruct_$(Configuration);$(SolutionDir)GCommands_$(Configuration);$(SolutionDir)GPhysicLib_$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(ProjectName)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build_$(ProjectName)\$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)DirectXTK\Inc;$(SolutionDir)DirectXTK\Src;$(SolutionDir)MathLib;$(SolutionDir)DataStruct;$(SolutionDir)GCommands;$(SolutionDir)GPhysicLib;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)DirectXTK\Bin\$(Configuration);$(SolutionDir)MathLib_$(Configuration);$(SolutionDir)DataStruct_$(Configuration);$(SolutionDir)GCommands_$(Configuration);$(SolutionDir)GPhysicLib_$(Configuration);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName)$(ConfigurationName).pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(IntDir)$(TargetName).map</MapFileName>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(ProjectName)$(ConfigurationName).pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDatabaseFile>$(IntDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(IntDir)$(TargetName).map</MapFileName>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="GCamera.h" />
+    <ClInclude Include="GFont.h" />
+    <ClInclude Include="GFrustum.h" />
+    <ClInclude Include="GGraphics.h" />
+    <ClInclude Include="GLight.h" />
+    <ClInclude Include="GModel.h" />
+    <ClInclude Include="GModelNormalMap.h" />
+    <ClInclude Include="GModelTest.h" />
+    <ClInclude Include="GModelLoader.h" />
+    <ClInclude Include="GRenderer.h" />
+    <ClInclude Include="GRenderIncludes.h" />
+    <ClInclude Include="GRenderToTexture.h" />
+    <ClInclude Include="GRenderWindow.h" />
+    <ClInclude Include="GScene.h" />
+    <ClInclude Include="GSprite.h" />
+    <ClInclude Include="GTexture.h" />
+    <ClInclude Include="GTextureArray.h" />
+    <ClInclude Include="Shaders\GAbstract2TexturesShader.h" />
+    <ClInclude Include="Shaders\GAbstractShader.h" />
+    <ClInclude Include="Shaders\GColors.h" />
+    <ClInclude Include="Shaders\GColorShader.h" />
+    <ClInclude Include="Shaders\GLightMapShader.h" />
+    <ClInclude Include="Shaders\GLightShader.h" />
+    <ClInclude Include="Shaders\GMultiTextureShader.h" />
+    <ClInclude Include="Shaders\GNormalMapShader.h" />
+    <ClInclude Include="Shaders\GTextureShader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GCamera.cpp" />
+    <ClCompile Include="GFont.cpp" />
+    <ClCompile Include="GFrustum.cpp" />
+    <ClCompile Include="GGraphics.cpp" />
+    <ClCompile Include="GModel.cpp" />
+    <ClCompile Include="GModelNormalMap.cpp" />
+    <ClCompile Include="GModelTest.cpp" />
+    <ClCompile Include="GModelLoader.cpp" />
+    <ClCompile Include="GRenderer.cpp" />
+    <ClCompile Include="GRenderToTexture.cpp" />
+    <ClCompile Include="GRenderWindow.cpp" />
+    <ClCompile Include="GScene.cpp" />
+    <ClCompile Include="GSprite.cpp" />
+    <ClCompile Include="GTexture.cpp" />
+    <ClCompile Include="GTextureArray.cpp" />
+    <ClCompile Include="Shaders\GAbstract2TexturesShader.cpp" />
+    <ClCompile Include="Shaders\GAbstractShader.cpp" />
+    <ClCompile Include="Shaders\GColorShader.cpp" />
+    <ClCompile Include="Shaders\GLightMapShader.cpp" />
+    <ClCompile Include="Shaders\GLightShader.cpp" />
+    <ClCompile Include="Shaders\GMultiTextureShader.cpp" />
+    <ClCompile Include="Shaders\GNormalMapShader.cpp" />
+    <ClCompile Include="Shaders\GTextureShader.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

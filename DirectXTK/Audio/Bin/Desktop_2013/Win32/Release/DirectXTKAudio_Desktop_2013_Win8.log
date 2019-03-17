@@ -1,0 +1,28 @@
+﻿Compilazione avviata 14/02/2015 14:06:41.
+     1>Progetto "C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\Audio\DirectXTKAudio_Desktop_2013_Win8.vcxproj" sul nodo 2 (destinazioni: Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\Inc /I..\Src /Zi /nologo /W4 /WX- /O2 /Oi /Oy- /GL /D _WIN32_WINNT=0x0602 /D WIN32 /D NDEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Yc"pch.h" /Fp"Bin\Desktop_2013\Win32\Release\DirectXTKAudioWin8.pch" /Fo"Bin\Desktop_2013\Win32\Release\\" /Fd"Bin\Desktop_2013\Win32\Release\DirectXTKAudioWin8.pdb" /Gd /TP /analyze- /errorReport:prompt AudioEngine.cpp
+         AudioEngine.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\Inc /I..\Src /Zi /nologo /W4 /WX- /O2 /Oi /Oy- /GL /D _WIN32_WINNT=0x0602 /D WIN32 /D NDEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Yu"pch.h" /Fp"Bin\Desktop_2013\Win32\Release\DirectXTKAudioWin8.pch" /Fo"Bin\Desktop_2013\Win32\Release\\" /Fd"Bin\Desktop_2013\Win32\Release\DirectXTKAudioWin8.pdb" /Gd /TP /analyze- /errorReport:prompt DynamicSoundEffectInstance.cpp SoundCommon.cpp SoundEffect.cpp SoundEffectInstance.cpp WaveBank.cpp WaveBankReader.cpp WAVFileReader.cpp
+         DynamicSoundEffectInstance.cpp
+         SoundCommon.cpp
+         SoundEffect.cpp
+         SoundEffectInstance.cpp
+         WaveBank.cpp
+         WaveBankReader.cpp
+         WAVFileReader.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"Bin\Desktop_2013\Win32\Release\DirectXTKAudioWin8.lib" /NOLOGO /LTCG Bin\Desktop_2013\Win32\Release\AudioEngine.obj
+         Bin\Desktop_2013\Win32\Release\DynamicSoundEffectInstance.obj
+         Bin\Desktop_2013\Win32\Release\SoundCommon.obj
+         Bin\Desktop_2013\Win32\Release\SoundEffect.obj
+         Bin\Desktop_2013\Win32\Release\SoundEffectInstance.obj
+         Bin\Desktop_2013\Win32\Release\WaveBank.obj
+         Bin\Desktop_2013\Win32\Release\WaveBankReader.obj
+         Bin\Desktop_2013\Win32\Release\WAVFileReader.obj
+         DirectXTKAudio_Desktop_2013_Win8.vcxproj -> C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\Audio\Bin\Desktop_2013\Win32\Release\DirectXTKAudioWin8.lib
+     1>Compilazione progetto "C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\Audio\DirectXTKAudio_Desktop_2013_Win8.vcxproj" (destinazioni: Build) completata.
+
+Compilazione completata.
+
+Tempo trascorso 00:00:05.13

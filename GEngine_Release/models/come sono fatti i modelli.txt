@@ -1,0 +1,6 @@
+la prima riga indica il numero di vertici
+
+poi c'è una riga per ogni vertice con 8 numeri
+posizione(x,y,z) texture(u,v) normal(nx,ny,nz)
+
+ogni tre linee fanno un triangolo, i vertici sono presentati in senso orario

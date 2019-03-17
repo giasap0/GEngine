@@ -1,0 +1,17 @@
+﻿Compilazione avviata 14/02/2015 14:06:46.
+     1>Progetto "C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\XWBTool\XWBTool_Desktop_2013.vcxproj" sul nodo 3 (destinazioni: Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\Audio /I..\Src /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _WIN32_WINNT=0x0600 /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\xwbtool\bin\Release\\" /Fd"C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\xwbtool\bin\Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Audio\WAVFileReader.cpp xwbtool.cpp
+         WAVFileReader.cpp
+         xwbtool.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\xwbtool\bin\Release\XWBTool.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\xwbtool\bin\Release\XWBTool.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\xwbtool\bin\Release\XWBTool.lib" /MACHINE:X86 /SAFESEH "C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\xwbtool\bin\Release\WAVFileReader.obj"
+         "C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\xwbtool\bin\Release\xwbtool.obj"
+         Generazione codice in corso...
+         Generazione codice terminata
+         XWBTool_Desktop_2013.vcxproj -> C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\xwbtool\bin\Release\XWBTool.exe
+     1>Compilazione progetto "C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\XWBTool\XWBTool_Desktop_2013.vcxproj" (destinazioni: Build) completata.
+
+Compilazione completata.
+
+Tempo trascorso 00:00:08.86

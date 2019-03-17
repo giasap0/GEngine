@@ -1,0 +1,4 @@
+C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\MakeSpriteFont\bin\Release\MakeSpriteFont.exe
+C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\MakeSpriteFont\bin\Release\MakeSpriteFont.pdb
+C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\MakeSpriteFont\obj\Release\MakeSpriteFont.exe
+C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\MakeSpriteFont\obj\Release\MakeSpriteFont.pdb

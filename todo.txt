@@ -1,0 +1,11 @@
+#implementare caricamento file mtl leggendolo dal .obj
+
+#Il metodo di indicizzazione dei vertici dei modelli fa schifo (triangle list), tanti vertici sono ripetuti più volte con spreco di calcoli nel vertex shader. Scrivere un nuovo metodo di indicizzazione più decente (triangle strip)
+
+# implementare una hash table,.
+
+# vedere se posso implementare funzioni per calcolare le matrici ortogonale e view
+
+# modificare GFont in modo da poter applicare le matrici di trasformazione anche al testo
+
+#scene->getData mi deve dare: posizione, rotazione

@@ -1,0 +1,5 @@
+C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\MakeSpriteFont\bin\Debug\MakeSpriteFont.exe
+C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\MakeSpriteFont\bin\Debug\MakeSpriteFont.pdb
+C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.csprojResolveAssemblyReference.cache
+C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.exe
+C:\Users\Utente\Documents\Documenti Famiglia\Giampaolo\DirectXTK\MakeSpriteFont\obj\Debug\MakeSpriteFont.pdb
